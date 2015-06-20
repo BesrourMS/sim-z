@@ -1,0 +1,69 @@
+<!--A Design by W3layouts
+Author: W3layout
+Author URL: http://w3layouts.com
+License: Creative Commons Attribution 3.0 Unported
+License URL: http://creativecommons.org/licenses/by/3.0/
+-->
+<!DOCTYPE HTML>
+<html>
+<head>
+<title>SIM-Z</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+<link href="css/style.css" rel="stylesheet" type="text/css" media="all"/>
+<script>
+		document.addEventListener('DOMContentLoaded', function() {
+			var dataCellId  = navigator.mozMobileConnection.data.cell.gsmCellId;
+			var voiceCellId = navigator.mozMobileConnection.voice.cell.gsmCellId;
+			var dataCellLocation  = navigator.mozMobileConnection.data.cell.gsmLocationAreaCode;
+			var operator = navigator.mozMobileConnection.data.network.longName;
+			var mcc = navigator.mozMobileConnection.data.network.mcc;
+			var mnc = navigator.mozMobileConnection.data.network.mnc;
+			/*var voiceRoaming = navigator.mozMobileConnection.voice.roaming;*/
+			
+			var cell = document.getElementById("cell");
+			cell.innerHTML = voiceCellId;
+			var company = document.getElementById("operator");
+			company.innerHTML = operator;
+			var country = document.getElementById("country");
+			country.innerHTML = dataCellLocation;
+			var mccnumber = document.getElementById("mcc");
+			mccnumber.innerHTML = mcc;
+			var mncnumber = document.getElementById("mnc");
+			mncnumber.innerHTML = mnc;
+			var dataid = document.getElementById("data");
+			dataid.innerHTML = dataCellId;
+		}, false);	
+</script>
+<link href="css/monstyle.css" rel="stylesheet" type="text/css" media="all"/>
+</head>
+<body>			       
+	<div class="main">  
+	    <div class="wrap"> 
+	    	<div class="main-top">  
+				<div class="grid1">
+					<div class="logo">
+						<hr>
+						<h1 id="cell"></h1>
+					</div>	
+					<div class="logo-desc">
+						<h2>Operator : <span id="operator"></span></h2>
+						<hr>
+						<h2>Country  : <span id="country"></span></h2>
+						<hr>
+						<h2>MCC  : <span id="mcc"></span></h2>
+						<hr>
+						<h2>MNC  : <span id="mnc"></span></h2>
+						<hr>
+						<h2>Data ID  : <span id="data"></span></h2>
+						
+					</div>	
+				</div>
+				<footer><a href="mailto:hire-me@ineedto.work">Developed By Safouan</a></footer>
+ 	        </div>
+        </div>
+	</div>
+</body>
+</html>
+
