@@ -1,7 +1,12 @@
 {
   "version": "1",
   "name": "SIM-Z",
-  "type" : "privileged",
+  "type" : "certified",
+    "permissions": {
+    "mobileconnection": {
+      "description": "Required to load information about sim card"
+    }
+  },
   "launch_path": "/index.html",
   "description": "SIM-Z Free Application that reports information about your sim card",
   "icons": {
