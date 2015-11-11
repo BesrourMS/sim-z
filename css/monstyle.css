@@ -1,0 +1,53 @@
+html {
+    position: relative;
+    min-height: 100%;
+	background: linear-gradient(-50deg,#4cddff,#3b9aca 16%,#2d6ca5 31%,#2a5291 43%,#283d81 55%,#222654 79%,#1e1635);
+	background-image: linear-gradient(-50deg, rgb(76, 221, 255), rgb(59, 154, 202) 16%, rgb(45, 108, 165) 31%, rgb(42, 82, 145) 43%, rgb(40, 61, 129) 55%, rgb(34, 38, 84) 79%, rgb(30, 22, 53));
+	background-position-x: initial;
+	background-position-y: initial;
+	background-size: initial;
+	background-repeat-x: initial;
+	background-repeat-y: initial;
+	background-attachment: initial;
+	background-origin: initial;
+	background-clip: initial;
+}
+body {
+    margin: 0 0 100px; /* bottom = footer height */
+}
+footer {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 50px;
+    width: 100%;
+	text-align: center;
+}
+footer > a {
+	display: inline-block;
+	text-decoration: none;
+	border: 1px solid #ffffff;
+	height: 40%;
+	line-height: 18px;
+	color: #ffffff;
+	-webkit-border-radius: 5px;
+	-webkit-background-clip: padding-box;
+	-moz-border-radius: 5px;
+	-moz-background-clip: padding;
+	border-radius: 5px;
+	background-clip: padding-box;
+	padding: .5em .5em;
+	-webkit-transition: all 0.2s ease-out;
+	-moz-transition: all 0.2s ease-out;
+	-o-transition: all 0.2s ease-out;
+	transition: all 0.2s ease-out;
+	background: none;
+	-webkit-box-sizing: content-box;
+	-moz-box-sizing: content-box;
+	box-sizing: content-box;
+	cursor: pointer;
+	zoom: 1;
+	-webkit-backface-visibility: hidden;
+	position: relative;
+	font-size: 0.75em;
+}
