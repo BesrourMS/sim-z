@@ -20,5 +20,6 @@
   "installs_allowed_from": [
     "*"
   ],
-  "default_locale": "en"
+  "default_locale": "en",
+  "default-src *; script-src 'self'; object-src 'none'; style-src 'self' 'unsafe-inline'"
 }
