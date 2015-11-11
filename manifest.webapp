@@ -1,6 +1,7 @@
 {
   "version": "1",
   "name": "SIM-Z",
+  "type" : "privileged",
   "launch_path": "/index.html",
   "description": "SIM-Z Free Application that reports information about your sim card",
   "icons": {
